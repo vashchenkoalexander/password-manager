@@ -9,7 +9,8 @@ module org.pass.passwordmanager {
     exports org.pass.passwordmanager.Controllers;
     exports org.pass.passwordmanager.Controllers.Admin;
     exports org.pass.passwordmanager.Controllers.Client;
+    exports org.pass.passwordmanager.Controllers.Util;
     exports org.pass.passwordmanager.Models;
-    exports org.pass.passwordmanager.Views;
-    opens org.pass.passwordmanager.Views to javafx.fxml;
+
+    opens org.pass.passwordmanager.Controllers.Util to javafx.fxml;
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox onDragDetected="#onDragPressed" onDragEntered="#onDragPressed" onMouseDragEntered="#onDragPressed" onMouseDragged="#onDragDragged" onMousePressed="#onDragPressed" style="-fx-background-color: #2C3E50;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pass.passwordmanager.Controllers.Util.CustomTitleBarController">
+    <MenuBar style="-fx-background-color: #2C3E50;">
+        <Menu mnemonicParsing="false" style="-fx-background-color: #2C3E50;" text="...">
+            <MenuItem mnemonicParsing="false" style="-fx-background-color: #2C3E50;" text="Close" />
+        </Menu>
+    </MenuBar>
+    <Label fx:id="appTitle" alignment="CENTER" contentDisplay="BOTTOM" prefHeight="25.0" prefWidth="101.0" style="-fx-text-fill: white;" text="Password Manager" HBox.hgrow="ALWAYS" />
+    <Region HBox.hgrow="ALWAYS" />
+    <Button onAction="#minimize" style="-fx-background-color: transparent; -fx-text-fill: white;" text="—" />
+    <Button onAction="#maximize" style="-fx-background-color: transparent; -fx-text-fill: white;" text="□" />
+    <Button onAction="#close" style="-fx-background-color: transparent; -fx-text-fill: white;" text="×" />
+</HBox>
